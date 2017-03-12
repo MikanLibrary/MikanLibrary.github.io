@@ -310,8 +310,11 @@ h3 {
 	align-items: center;
 	transition: background-color 0.5s ease-out;
 	background-color: #36a61d;
+	font-weight: bold;
+	color: white;
 }
 
 #download li > a:hover {
 	background-color: #93e441;
+	color: black;
 }
