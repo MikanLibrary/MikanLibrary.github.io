@@ -14,3 +14,8 @@ p
 p > a {
 	display: inline;
 }
+
+section > .button{
+	width: 20rem;
+	margin: auto;
+}
