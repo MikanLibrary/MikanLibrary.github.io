@@ -10,26 +10,123 @@
 	<script></script>
 </head>
 <body>
+	<header>
+		<a href="https://github.com/MikanLibrary/MikanLibrary" class="flatbutton small">Github</a>
+		<a href="https://github.com/MikanLibrary/MikanLibrary/issues" class="flatbutton small">Issue</a>
+		<a href="/wiki/" class="flatbutton small">ドキュメント</a>
+	</header>
 	<div>
-		<header><a href="http://mikanlibrary.github.io/"><img src="res/mikan.png" /></a><h1>Mikanライブラリ</h1></header>
-		<article>
-			<h1>※現在移転作業中。VisualStudio2017リリース後もろもろ作業し、2017/03/12を目途に移転完了させる予定です</h1>
-			<p>仮Mikan2017:<a href="./res/MikanInstaller2017_v2.1.5_2.zip">MikanInstaller2017_v2.1.5.zip</a> テスト中だが動くはず。</p>
-			<p>作者は今VS2017と格闘しています。遭遇したエラーについては <a href="https://github.com/MikanLibrary/MikanLibrary.github.io/wiki/Install-VS2017-Error.md">こちら</a> にまとめています。</p>
-			<p>その他エラーが発生した場合、 <a href="https://github.com/MikanLibrary/MikanLibrary.github.io/issues">こちらのIssue</a> に報告や対処法を乗せてもらえれば追記します。報告だけの場合はある程度サポートできるかもしれません。UIは英語ですが、日本語で大丈夫ですので心配しなくても大丈夫です。</p>
+		<section id="top">
+			<div class="colorOrangeAlpha">
+				<h1>Mikan Library</h1>
+				<p>Visual Studio 2017対応 Mikanライブラリ</p>
+				<div class="button"><a href="./install/mikan/release/MikanInstaller2017_v2.1.5.zip">インストーラー ver 2.1.5</a></div>
+				<div class="button"><a href="#download" class="deprecation">その他ダウンロード</a></div>
+				<p>以下順番でインストールしてください。</p>
+				<ol>
+					<li>Visual Studio</li>
+					<li>DirectX SDK</li>
+					<li>Mikanライブラリ</li>
+				</ol>
+				<div class="button"><a href="#install">インストール手順</a></div>
+			</div>
+		</section>
+		<section id="info" class="colorWhite">
 			<h2>Mikanライブラリとは</h2>
-			<p>Windows向けのDirectX9を用いたゲーム制作ライブラリです。</p>
-			<p>サークルで新入生のゲーム制作導入に使えるよう、できるだけ簡単にゲームが作れることを目標にしています。</p>
+			<div>
+				<h3>ゲームライブラリ</h3>
+				<p>Windows向けのゲームを作成する2D用ゲームライブラリです。</p>
+				<p>比較的単純な命令で入力や描画、音・動画の再生、ネットワーク通信などが可能です。</p>
+				<div class="button"><a href="/docs/">ドキュメント</a></div>
+			</div>
+			<div>
+				<h3>開発・基盤技術</h3>
+				<p>MikanライブラリはWin32APIとDirectX 9を使っています。</p>
+				<p>開発はC++で行い、Visual Studioを使うことを想定しています。</p>
+				<div class="button"><a href="#install">インストール手順</a></div>
+			</div>
+		</section>
+		<section id="target" class="flex colorOrange">
+			<div>
+				<h2>動作対象</h2>
+				<ul>
+					<li>Windows Vista以降<ul class="nolist"><li>ビルド方法によってはXP対応だが、サポート対象外</li></ul></li>
+					<li>DirectX 9 TODO:リンク</li>
+				</ul>
+			</div>
+			<div>
+				<h2>開発環境</h2>
+				<ul>
+					<li>Visual Studio　Community 2017<ul class="nolist"><li>古いバージョンのMikanを利用する場合、2008から対応</li></ul></li>
+					<li>DirectX 9 SDK</li>
+				</ul>
+			</div>
+		</section>
+		<section id="install" class="colorWhite">
+			<h2>インストール</h2>
+			<div class="side">
+				<div class="vs">
+					<div class="flex">
+					<h3>1. Visual Studio</h3>
+						<div>
+							<div class="button"><a href="https://www.visualstudio.com/downloads/" target="_blank">最新版ダウンロードページ</a></div>
+							<div class="button"><a href="./install/visualstudio/vs2017/">インストール手順</a></div>
+							<div class="button"><a href="./install/visualstudio" class="deprecation">過去のインストール手順</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="dx9">
+					<div class="flex">
+					<h3>2. DirectX 9 SDK</h3>
+						<div>
+							<div class="button"><a href="https://www.microsoft.com/en-us/download/details.aspx?id=6812" target="_blank">ダウンロードページ</a></div>
+							<div class="button"><a href="./install/directx9">インストール手順</a></div>
+							<div class="button"><a href="https://www.microsoft.com/ja-jp/download/details.aspx?id=34429" class="deprecation">エンドユーザーランタイム</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="mikan">
+					<div class="flex">
+					<h3>3. Mikan</h3>
+						<div>
+							<div class="button"><a href="./install/mikan/release/MikanInstaller2017_v2.1.5.zip">最新版ダウンロード</a></div>
+							<div class="button"><a href="./install/mikan/">インストール手順</a></div>
+							<div class="button"><a href="#download" class="deprecation">その他ダウンロード</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="download" class="colorOrange">
 			<h2>ダウンロード</h2>
-			<p>そのうちここに移転したい。</p>
-			<p><a href="http://mikan.azulite.net/wiki.cgi?page=Download">ダウンロード - MikanライブラリWiki</a></p>
-			<h2>ソースコード</h2>
-			<li><a href="https://github.com/MikanLibrary/MikanLibrary">Githubリポジトリ</a><ul><li>本体</li></ul></li>
-			<li><a href="https://github.com/MikanLibrary">Githubプロジェクトページ</a><ul><li>サブプロジェクト含む全てのプロジェクト</li></ul></li>
-			<h2></h2>
-			<p>Mikanライブラリのページを建造予定。</p>
-		</article>
-		<footer>(C) Mikan Library</footer>
+			<div>
+				<ul>
+					<li>
+						<ul>
+							<li><a href="./install/mikan/release/MikanInstaller2017_v2.1.5.zip">Mikanライブラリ<br />VisualStudio 2017対応<br />最新版<br />インストーラー</a></li>
+							<li><a href="./install/mikan/release/Mikan2017_v2.1.5.zip">Mikanライブラリ<br />VisualStudio 2017対応<br />最新版<br />手動インストール</a></li>
+							<li><a href="https://github.com/MikanLibrary">Mikanライブラリ<br />ソース<br />(Github)</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="./install/mikan/release/MikanProject2017.zip">プロジェクトテンプレート<br />VisualStudio 2017対応</a></li>
+							<li><a href="./install/mikan/release/MikanInstaller2015_v2.1.5.zip">Mikanライブラリ<br />VisualStudio 2015対応<br />v2.1.5<br />インストーラー</a></li>
+							<li><a href="./install/mikan/release/MikanInstaller2013_2.1.5_3.zip">Mikanライブラリ<br />VisualStudio 2013対応<br />v2.1.5<br />インストーラー</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><a href="./install/mikan/download.html">過去すべて</a></li>
+							<li><a href="./install/visualstudio">VisualStudio</a></li>
+							<li><a href="./install/directx9">DirectX</a></li>
+						</ul>
+					</li>
+			</ul>
+				
+			</div>
+		</section>
 	</div>
+	<footer>(C) Mikan Library</footer>
 </body>
 </html>

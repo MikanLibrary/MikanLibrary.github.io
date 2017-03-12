@@ -1,0 +1,16 @@
+section > a
+{
+	margin: auto;
+	width: 80vmin;
+	height: 80vmin;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+p
+{
+	text-align: center;
+}
+p > a {
+	display: inline;
+}
